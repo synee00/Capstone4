@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Divine Grocery</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="Header">
+      <h1>Welcome to Divine Grocery</h1>
+      <p>
+        It's ok to have expensive taste.
+      </p>
+    </div>
+    <form>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td><input type="radio" id="caviar"> Caviar</td>
+          <td id="alignRight">$15.99</td>
+          <td><input type="number" min="0" max="99" value="0" id="caviarQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">A dash of fish eggs</td>
+        </tr>
+        <tr>
+          <td><input type="radio" id="truffles"> Truffles</td>
+          <td id="alignRight">$20.99</td>
+          <td><input type="number" min="0" max="99" value="0" id="trufflesQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">Try our shrooms</td>
+        </tr><tr>
+        <td><input type="radio" id="avocado"> Avocado Toast</td>
+        <td id="alignRight">$10.00</td>
+        <td><input type="number" min="0" max="99" value="0" id="avocadoQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">Millenials only.</td>
+        </tr><tr>
+        <td><input type="radio" id="soul"> One Pure Soul</td>
+        <td id="alignRight">$100.99</td>
+        <td><input type="number" min="0" max="99" value="0" id="soulQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">We can't serve you Betty White but this is the next best thing</td>
+        </tr><tr>
+        <td><input type="radio" id="escargot"> Escargot</td>
+        <td id="alignRight">$50.99</td>
+        <td><input type="number" min="0" max="99" value="0" id="escargotQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">Fancy delicious snails</td>
+        </tr><tr>
+        <td><input type="radio" id="crab"> Sebastian (Crab)</td>
+        <td id="alignRight">$45.00</td>
+        <td><input type="number" min="0" max="99" value="0" id="crabQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">Straight from under the sea.</td>
+        </tr><tr>
+        <td><input type="radio" id="lobster"> Dancing Lobster</td>
+        <td id="alignRight">$85.00</td>
+        <td><input type="number" min="0" max="99" value="0" id="lobsterQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">A buttered up lobster from the Amanda Bynes show.</td>
+        </tr><tr>
+        <td><input type="radio" id="soy"> Soy</td>
+        <td id="alignRight">$3.99</td>
+        <td><input type="number" min="0" max="99" value="0" id="soyQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">For our vegans who can't eat their boss</td>
+        </tr><tr>
+        <td><input type="radio" id="lamb"> Silence of the Rack Lamb</td>
+        <td id="alignRight">$75.00</td>
+        <td><input type="number" min="0" max="99" value="0" id="lambQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">Freshly prepared Lamb from our backyard to your table</td>
+        </tr><tr>
+        <td><input type="radio" id="cheesecake"> Let Them Eat (Cheese) Cake</td>
+        <td id="alignRight">$800.00</td>
+        <td><input type="number" min="0" max="99" value="0" id="cheesecakeQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">Personally served cheesecake by Marie Antoinette. Guillotine not included.</td>
+        </tr><tr>
+        <td><input type="radio" id="sherbert"> Blood (Orange) of Your Enemies</td>
+        <td id="alignRight">$25.00</td>
+        <td><input type="number" min="0" max="99" value="0" id="sherbertQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">Orange sherbert made with the boss you hate</td>
+        </tr><tr>
+        <td><input type="radio" id="tea"> Matcha Tea</td>
+        <td id="alignRight">$5.99</td>
+        <td><input type="number" min="0" max="99" value="0" id="teaQ"></td>
+        </tr>
+        <tr>
+          <td id="noBorder" colspan="2">Imported from the best Japanese anime</td>
+        </tr>
+        <tr>
+          <td id="centerButton" colspan="3"><input type="button" onclick="getItems()" value="Add Items to Cart"></td>
+        </tr>
+      </table>
+    </form>
+    
+    <br>
+    <br>
+    <br>
+    
+    <div id="shoppingList">
+    </div>
+    
+    <div id="listTotal">
+    </div>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
